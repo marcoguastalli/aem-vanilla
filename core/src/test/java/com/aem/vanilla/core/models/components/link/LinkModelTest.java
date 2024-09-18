@@ -1,5 +1,6 @@
 package com.aem.vanilla.core.models.components.link;
 
+import com.adobe.cq.wcm.core.components.commons.link.LinkManager;
 import com.aem.vanilla.core.testcontext.AppAemContext;
 import io.wcm.testing.mock.aem.junit5.AemContext;
 import io.wcm.testing.mock.aem.junit5.AemContextExtension;
@@ -22,7 +23,7 @@ class LinkModelTest {
 
     @BeforeEach
     void init() {
-        aemContext.addModelsForClasses(LinkModel.class);
+        aemContext.addModelsForClasses(LinkModel.class, LinkManager.class);
         aemContext.load().json("/com/aem/vanilla/core/models/components/link/link.json", "/content");
     }
 
