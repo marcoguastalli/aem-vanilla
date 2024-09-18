@@ -49,6 +49,8 @@
         <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
         <node.version>v16.17.0</node.version>
         <npm.version>8.15.0</npm.version>
+        <!-- 3rd party versions -->
+        <com.fasterxml.jackson.core.version>2.17.1</com.fasterxml.jackson.core.version>
         <!-- JUnit version -->
         <org.junit.version>5.8.2</org.junit.version>
         <org.mockito.version>4.11.0</org.mockito.version>
@@ -513,6 +515,23 @@
                 <artifactId>core.wcm.components.core</artifactId>
                 <version>${core.wcm.components.version}</version>
             </dependency>
+            <!-- https://github.com/FasterXML/ INI -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${com.fasterxml.jackson.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${com.fasterxml.jackson.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${com.fasterxml.jackson.core.version}</version>
+            </dependency>
+            <!-- https://github.com/FasterXML/jackson END -->
             <!-- Testing -->
             <dependency>
                 <groupId>org.junit</groupId>
@@ -584,6 +603,12 @@
                 <groupId>uk.org.lidalia</groupId>
                 <artifactId>slf4j-test</artifactId>
                 <version>${uk.org.lidalia.slf4j-test.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>xerces</groupId>
+                <artifactId>xercesImpl</artifactId>
+                <version>2.12.2</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>

@@ -81,6 +81,20 @@ Export-Package: com.aem.vanilla.core.filters.*;com.aem.vanilla.core.listeners.*;
             <artifactId>core.wcm.components.core</artifactId>
             <scope>test</scope>
         </dependency>
+        <!-- https://github.com/FasterXML/ INI -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <!-- https://github.com/FasterXML/jackson END -->
         <!-- Testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -122,6 +136,11 @@ Export-Package: com.aem.vanilla.core.filters.*;com.aem.vanilla.core.listeners.*;
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.models.impl</artifactId>
             <version>1.4.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
