@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aemvanilla/clientlibs"/>
+    <filter root="/apps/aemvanilla/components"/>
+    <filter root="/apps/aemvanilla/i18n"/>
+    <filter root="/apps/sling" />
+    <filter root="/apps/msm/aemvanilla_blueprint" mode="merge"/>
+</workspaceFilter>
