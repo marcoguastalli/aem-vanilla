@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           xmlns:cq="http://www.day.com/jcr/cq/1.0"
           jcr:primaryType="nt:unstructured"
@@ -38,6 +40,16 @@
                                             fieldDescription="aemvanilla.components.link.field.linkURL.description"
                                             fieldLabel="aemvanilla.components.link.field.linkURL.label"
                                             name="./linkURL"/>
+                                    <linkTarget
+                                            granite:class="cmp-link-target"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            fieldDescription="aemvanilla.components.link.field.linkTarget.description"
+                                            name="./linkTarget"
+                                            text="aemvanilla.components.link.field.linkTarget.label"
+                                            uncheckedValue="_self"
+                                            value="_blank">
+                                    </linkTarget>
                                 </items>
                             </column>
                         </items>

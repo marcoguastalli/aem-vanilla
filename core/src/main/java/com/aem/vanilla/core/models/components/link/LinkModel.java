@@ -18,7 +18,6 @@ import javax.annotation.PostConstruct;
 import static com.aem.vanilla.core.CoreConstants.DOT;
 import static com.aem.vanilla.core.CoreConstants.HTML_EXTENSION;
 
-
 @Model(adaptables = SlingHttpServletRequest.class,
         adapters = {LinkModel.class, ComponentExporter.class},
         resourceType = LinkModel.RESOURCE_TYPE,
@@ -32,14 +31,14 @@ public class LinkModel extends AbstractComponentImpl {
     public static final String RESOURCE_TYPE = "aemvanilla/components/link";
 
     @Self
-    private SlingHttpServletRequest request;
-    @ValueMapValue
-    private String linkURL;
-    @ValueMapValue
-    private String linkText;
-
+    private SlingHttpServletRequest slingHttpServletRequest;
     @Self
     private LinkManager linkManager;
+    @ValueMapValue
+    private String linkText;
+    @ValueMapValue
+    private String linkURL;
+
     protected Link link;
 
     @PostConstruct
@@ -47,7 +46,7 @@ public class LinkModel extends AbstractComponentImpl {
         link = this.linkManager.get(this.resource).build();
     }
 
-    public String getLinkUrl() {
+    public String getLinkURL() {
         if (null != link && link.isValid()) {
             return link.getURL();
         }
