@@ -38,12 +38,15 @@ public class LinkModel extends AbstractComponentImpl {
     private String linkText;
     @ValueMapValue
     private String linkURL;
-
-    protected Link link;
+    protected Link<String> link;
 
     @PostConstruct
     private void initModel() {
         link = this.linkManager.get(this.resource).build();
+    }
+
+    public String getLinkText() {
+        return linkText;
     }
 
     public String getLinkURL() {
@@ -53,8 +56,8 @@ public class LinkModel extends AbstractComponentImpl {
         return linkURL.concat(DOT).concat(HTML_EXTENSION);
     }
 
-    public String getLinkText() {
-        return linkText;
+    public Link<String> getLink() {
+        return link;
     }
 
     public boolean isEmpty() {
