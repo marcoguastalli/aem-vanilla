@@ -37,9 +37,9 @@
         https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest
         https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current?lang=en
         -->
-        <aem.sdk.api>2024.9.17964.20240924T170544Z-240800</aem.sdk.api>
+        <aem.sdk.api>2024.10.18175.20241010T124406Z-240900</aem.sdk.api>
         <!-- Adobe Core Components https://github.com/adobe/aem-core-wcm-components/releases -->
-        <core.wcm.components.version>2.26.0</core.wcm.components.version>
+        <core.wcm.components.version>2.27.0</core.wcm.components.version>
         <!-- OSGi versions -->
         <bnd.version>5.1.2</bnd.version>
         <componentGroupName>aemvanilla</componentGroupName>
