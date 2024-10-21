@@ -74,6 +74,25 @@
                             <type>zip</type>
                             <target>/apps/aemvanilla-packages/application/install</target>
                         </embedded>
+                        <!-- Adobe Core Components https://github.com/adobe/aem-core-wcm-components/releases -->
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.examples.ui.config</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aemvanilla-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aemvanilla-vendor-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.wcm.components.examples.ui.content</artifactId>
+                            <type>zip</type>
+                            <target>/apps/aemvanilla-vendor-packages/content/install</target>
+                        </embedded>
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -190,6 +209,22 @@
             <groupId>com.aem.vanilla</groupId>
             <artifactId>aem-vanilla.ui.config</artifactId>
             <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+        <!-- Adobe Core Components https://github.com/adobe/aem-core-wcm-components/releases -->
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.examples.ui.config</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.wcm.components.examples.ui.content</artifactId>
             <type>zip</type>
         </dependency>
     </dependencies>

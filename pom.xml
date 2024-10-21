@@ -503,16 +503,36 @@
     <!-- ====================================================================== -->
     <dependencyManagement>
         <dependencies>
+            <!-- AEM SDK -->
             <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>aem-sdk-api</artifactId>
                 <version>${aem.sdk.api}</version>
                 <scope>provided</scope>
             </dependency>
+            <!-- Adobe Core Components https://github.com/adobe/aem-core-wcm-components/releases -->
             <dependency>
                 <groupId>com.adobe.cq</groupId>
                 <artifactId>core.wcm.components.core</artifactId>
                 <version>${core.wcm.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.wcm.components.examples.ui.apps</artifactId>
+                <type>zip</type>
+                <version>${core.wcm.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.wcm.components.examples.ui.content</artifactId>
+                <type>zip</type>
+                <version>${core.wcm.components.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.wcm.components.examples.ui.config</artifactId>
+                <version>${core.wcm.components.version}</version>
+                <type>zip</type>
             </dependency>
             <!-- https://github.com/FasterXML/ INI -->
             <dependency>
