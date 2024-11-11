@@ -1,5 +1,7 @@
 {
   "resource.resolver.mapping": [
+    "^/content/core-components-examples/(.+)</$1",
+    "^/content/aemvanilla/en/(.+)</$1",
     "/:/"
   ]
 }
