@@ -133,7 +133,7 @@ Export-Package: com.aem.vanilla.core.filters.*;com.aem.vanilla.core.listeners.*;
         <dependency>
             <groupId>org.apache.sling</groupId>
             <artifactId>org.apache.sling.models.impl</artifactId>
-            <version>1.4.4</version>
+            <version>1.4.14</version>
             <scope>test</scope>
         </dependency>
         <dependency>
