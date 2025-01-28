@@ -2,12 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <!-- project -->
     <groupId>com.aem.vanilla</groupId>
     <artifactId>aem-vanilla</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <name>AEM Vanilla</name>
     <description>AEM Vanilla</description>
+    <!-- modules -->
     <modules>
         <module>all</module>
         <module>core</module>
@@ -20,6 +22,7 @@
         <module>dispatcher</module>
         <module>ui.tests</module>
     </modules>
+    <!-- properties -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -37,27 +40,28 @@
         https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest
         https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current?lang=en
         -->
-        <aem.sdk.api>2024.10.18459.20241031T210302Z-241000</aem.sdk.api>
+        <aem.sdk.api>2025.1.19149.20250116T154450Z-241100</aem.sdk.api>
         <!-- Adobe Core Components https://github.com/adobe/aem-core-wcm-components/releases -->
         <core.wcm.components.version>2.27.0</core.wcm.components.version>
+        <!-- Frontend Maven Plugin https://github.com/eirslett/frontend-maven-plugin/tags -->
+        <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
+        <node.version>v16.17.0</node.version>
+        <npm.version>8.15.0</npm.version>
         <!-- OSGi versions -->
         <bnd.version>5.1.2</bnd.version>
         <componentGroupName>aemvanilla</componentGroupName>
         <!-- AEM Analyser versions https://github.com/adobe/aemanalyser-maven-plugin/releases -->
         <aemanalyser.version>1.6.6</aemanalyser.version>
-        <!-- Frontend Maven Plugin https://github.com/eirslett/frontend-maven-plugin/tags -->
-        <frontend-maven-plugin.version>1.15.0</frontend-maven-plugin.version>
-        <node.version>v16.17.0</node.version>
-        <npm.version>8.15.0</npm.version>
         <!-- 3rd party versions -->
         <com.fasterxml.jackson.core.version>2.17.1</com.fasterxml.jackson.core.version>
         <!-- JUnit version -->
         <org.junit.version>5.8.2</org.junit.version>
-        <org.mockito.version>5.12.0</org.mockito.version>
+        <org.mockito.version>4.11.0</org.mockito.version>
         <io.wcm.testing.version>5.2.0</io.wcm.testing.version>
         <org.apache.sling.testing.caconfig.mock.plugin.version>1.4.0</org.apache.sling.testing.caconfig.mock.plugin.version>
         <uk.org.lidalia.slf4j-test.version>1.2.0</uk.org.lidalia.slf4j-test.version>
     </properties>
+    <!-- build -->
     <build>
         <plugins>
             <!-- Maven Release Plugin -->
@@ -385,6 +389,7 @@
             </plugins>
         </pluginManagement>
     </build>
+    <!-- profiles -->
     <profiles>
         <!-- Development profile: install only the bundle -->
         <profile>
@@ -486,9 +491,7 @@
                                         <goal>install</goal>
                                     </goals>
                                     <configuration>
-                                        <targetURL>
-                                            http://${aem.publish.host}:${aem.publish.port}/crx/packmgr/service.jsp
-                                        </targetURL>
+                                        <targetURL>http://${aem.publish.host}:${aem.publish.port}/crx/packmgr/service.jsp</targetURL>
                                     </configuration>
                                 </execution>
                             </executions>
@@ -498,9 +501,7 @@
             </build>
         </profile>
     </profiles>
-    <!-- ====================================================================== -->
-    <!-- D E P E N D E N C I E S -->
-    <!-- ====================================================================== -->
+    <!-- dependencies -->
     <dependencyManagement>
         <dependencies>
             <!-- AEM SDK -->
@@ -551,7 +552,7 @@
                 <version>${com.fasterxml.jackson.core.version}</version>
             </dependency>
             <!-- https://github.com/FasterXML/jackson END -->
-            <!-- Testing -->
+            <!-- Testing INI -->
             <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
@@ -636,6 +637,7 @@
                 <version>3.14.0</version>
                 <scope>test</scope>
             </dependency>
+            <!-- Testing END -->
         </dependencies>
     </dependencyManagement>
 </project>
