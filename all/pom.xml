@@ -74,7 +74,7 @@
                             <type>zip</type>
                             <target>/apps/aemvanilla-packages/application/install</target>
                         </embedded>
-                        <!-- Adobe Core Components https://github.com/adobe/aem-core-wcm-components/releases -->
+                        <!-- Adobe Core Components INI -->
                         <embedded>
                             <groupId>com.adobe.cq</groupId>
                             <artifactId>core.wcm.components.examples.ui.config</artifactId>
@@ -93,6 +93,7 @@
                             <type>zip</type>
                             <target>/apps/aemvanilla-vendor-packages/content/install</target>
                         </embedded>
+                        <!-- Adobe Core Components END -->
                     </embeddeds>
                 </configuration>
             </plugin>
@@ -211,7 +212,7 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-        <!-- Adobe Core Components https://github.com/adobe/aem-core-wcm-components/releases -->
+        <!-- Adobe Core Components INI -->
         <dependency>
             <groupId>com.adobe.cq</groupId>
             <artifactId>core.wcm.components.examples.ui.config</artifactId>
@@ -227,5 +228,6 @@
             <artifactId>core.wcm.components.examples.ui.content</artifactId>
             <type>zip</type>
         </dependency>
+        <!-- Adobe Core Components END -->
     </dependencies>
 </project>
