@@ -105,6 +105,7 @@ openssl md5 default_filters.any
 ### run dispatcher locally
 - colima status
 - colima start --cpu 4 --memory 8
+- ~/dev/repository/git/aem-servers/sync_dispatcher_src.sh ~/dev/repository/git/aem-vanilla/dispatcher/src ~/dev/repository/git/aem-servers/dispatcher-sdk-2.0.248/src
 - cd dispatcher-sdk-2.0.248/
 - ./bin/validate.sh ./src
 - ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 80
