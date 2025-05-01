@@ -146,11 +146,6 @@ Export-Package: com.aem.vanilla.core.filters.*;com.aem.vanilla.core.listeners.*;
             <artifactId>xercesImpl</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <scope>test</scope>
-        </dependency>
         <!-- Testing END -->
     </dependencies>
 </project>

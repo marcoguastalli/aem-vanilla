@@ -94,3 +94,18 @@ conf.dispatcher.d/filters/default_filters.any
 conf.dispatcher.d/renders/default_renders.any
 conf.dispatcher.d/virtualhosts/default_virtualhosts.any
 ```
+
+### md5
+openssl md5 dispatcher_vhost.conf
+openssl md5 default.farm
+openssl md5 default.vhost
+openssl md5 default_filters.any
+
+
+### run dispatcher locally
+- colima status
+- colima start --cpu 4 --memory 8
+- cd dispatcher-sdk-2.0.248/
+- ./bin/validate.sh ./src
+- ./bin/docker_run_hot_reload.sh ./src host.docker.internal:4503 80
+- curl -I http://localhost
