@@ -34,11 +34,11 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
-                    enableAssetDelivery="true"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
+                    enableAssetDelivery="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
                     titleValueFromDAM="true"
@@ -211,7 +211,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Policy for /apps/aemvanilla/components/page root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[AEM Vanilla - Content,group:AEM VANILLA - Structure,/apps/aemvanilla/components/form/container]">
+                    components="[group:AEM Vanilla - Content,group:AEM VANILLA - Structure,/apps/aemvanilla/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -241,7 +241,7 @@
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[AEM Vanilla - Content,group:AEM VANILLA - Structure,/apps/aemvanilla/components/form/container]">
+                    components="[group:AEM Vanilla - Content,group:AEM VANILLA - Structure,/apps/aemvanilla/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -269,9 +269,13 @@
                 <policy_components_page_root_container
                     cq:styleDefaultElement="main"
                     jcr:description="Policy for /apps/aemvanilla/components/page root container container"
+                    jcr:lastModified="{Date}2025-08-04T17:23:32.555+02:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Policy for /apps/aemvanilla/components/page root container container"
-                    sling:resourceType="wcm/core/components/policy/policy">
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:AEM Vanilla - Content,group:AEM VANILLA - Structure,/apps/aemvanilla/components/form/container]"
+                    layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_components_page_root_container>
                 <policy_1575040440977
@@ -345,9 +349,7 @@
     <wcm jcr:primaryType="nt:unstructured">
         <foundation jcr:primaryType="nt:unstructured">
             <components jcr:primaryType="nt:unstructured">
-                <responsivegrid jcr:primaryType="nt:unstructured">
-            
-                </responsivegrid>
+                <responsivegrid jcr:primaryType="nt:unstructured"/>
             </components>
         </foundation>
     </wcm>
