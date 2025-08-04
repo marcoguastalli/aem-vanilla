@@ -206,12 +206,12 @@
                 </policy_footer>
             </experiencefragment>
             <container jcr:primaryType="nt:unstructured">
-                <policy_1574694950110
-                    jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                <policy_components_page_root
+                    jcr:description="Policy for /apps/aemvanilla/components/page root"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Page Root"
+                    jcr:title="Policy for /apps/aemvanilla/components/page root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM VANILLA - Content,/apps/aemvanilla/components/form/container,group:AEM VANILLA - Structure]">
+                    components="[AEM Vanilla - Content,group:AEM VANILLA - Structure,/apps/aemvanilla/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -235,13 +235,13 @@
                                 resourceType="aemvanilla/components/contentfragment"/>
                         </assetToComponentMapping>
                     </cq:authoring>
-                </policy_1574694950110>
-                <policy_1574695586800
+                </policy_components_page_root>
+                <policy_components_page_root_container_container
                     jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM VANILLA - Content,/apps/aemvanilla/components/form/container]">
+                    components="[AEM Vanilla - Content,group:AEM VANILLA - Structure,/apps/aemvanilla/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -265,21 +265,21 @@
                                 resourceType="aemvanilla/components/contentfragment"/>
                         </assetToComponentMapping>
                     </cq:authoring>
-                </policy_1574695586800>
-                <policy_649128221558427
+                </policy_components_page_root_container_container>
+                <policy_components_page_root_container
                     cq:styleDefaultElement="main"
-                    jcr:description="Sets a &lt;main> element on the page content area."
+                    jcr:description="Policy for /apps/aemvanilla/components/page root container container"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Page Main"
+                    jcr:title="Policy for /apps/aemvanilla/components/page root container container"
                     sling:resourceType="wcm/core/components/policy/policy">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_649128221558427>
+                </policy_components_page_root_container>
                 <policy_1575040440977
                     jcr:description="Allows the template components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
                     jcr:primaryType="nt:unstructured"
                     jcr:title="XF Root"
                     sling:resourceType="wcm/core/components/policy/policy"
-                    components="[group:AEM VANILLA - Content,/apps/aemvanilla/components/form/container]">
+                    components="[AEM Vanilla - Content,group:AEM VANILLA - Structure,/apps/aemvanilla/components/form/container]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">

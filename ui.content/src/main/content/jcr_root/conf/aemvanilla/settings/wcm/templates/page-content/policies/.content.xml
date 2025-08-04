@@ -8,7 +8,7 @@
         jcr:primaryType="nt:unstructured"
         sling:resourceType="wcm/core/components/policies/mappings">
         <root
-            cq:policy="aemvanilla/components/container/policy_1574694950110"
+            cq:policy="aemvanilla/components/container/policy_components_page_root"
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/core/components/policies/mapping">
             <experiencefragment-header
@@ -20,11 +20,11 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/core/components/policies/mapping"/>
             <container
-                cq:policy="aemvanilla/components/container/policy_649128221558427"
+                cq:policy="aemvanilla/components/container/policy_components_page_root_container"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/core/components/policies/mapping">
                 <container
-                    cq:policy="aemvanilla/components/container/policy_1574695586800"
+                    cq:policy="aemvanilla/components/container/policy_components_page_root_container_container"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/core/components/policies/mapping">
                     <aemvanilla jcr:primaryType="nt:unstructured">

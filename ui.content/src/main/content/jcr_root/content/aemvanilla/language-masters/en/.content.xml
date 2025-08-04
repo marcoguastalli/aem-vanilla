@@ -75,7 +75,7 @@
                     <helloworld
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="aemvanilla/components/helloworld"
-                        text="lalala :)"/>
+                        text="AEM Vanilla :)"/>
                 </container>
             </container>
         </root>
