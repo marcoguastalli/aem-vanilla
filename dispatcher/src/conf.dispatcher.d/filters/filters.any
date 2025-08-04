@@ -7,4 +7,32 @@
 $include "./default_filters.any"
 
 # Allow components JSON model
-/0101 { /type "allow" /extension "json" /selectors "model" /path "/content/*" }
+/0101 { /type "allow" /method "GET" /path "/content/*" /selectors "model" /extension "json"}
+
+# Allow manifest.webmanifest files located in the content
+/0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
+
+# Allow Quick Search
+/0110 { /type "allow" /extension "json" /selectors "searchresults" /path "/content/*" }
+
+# Allow GraphQL global endpoint & preflight requests
+# GraphQL also supports GET requests, if you intend to use GET include it in the rule below
+/0164 { /type "allow" /method '(POST|OPTIONS)' /url "/content/graphql/global/endpoint.json" /extension "json"}
+/0165 { /type "allow" /method '(POST|OPTIONS)' /url "/content/cq:graphql/wknd/endpoint.json" /extension "json"}
+
+# GraphQL Persisted Queries
+/0170 { /type "allow" /method '(POST|OPTIONS)' /url "/graphql/execute.json/*" }
+/0171 { /type "allow" /url "/graphql/execute.json/*" }
+
+# ContextHub
+#/0190 { /type "allow" /url "*/contexthub.pagedata.json" }
+#/0191 { /type "allow" /url "/home/users/*.infinity.json" }
+
+# robots.txt
+/0202 { /type "allow" /method 'GET' /url "/robots.txt" }
+/0203 { /type "allow" /method 'GET' /url "/content/dam/wasisa/robots.txt" }
+# do no cache the private area
+/0204 { /type "allow" /method 'GET' /url "/bitcoin.pdf" }
+# /content/dam/${CONTENT_FOLDER_NAME}
+/0205 { /type "allow" /extension '(pkg|xml|zip)' /path "/content/dam/${CONTENT_FOLDER_NAME}*" }
+

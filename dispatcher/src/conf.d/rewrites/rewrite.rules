@@ -6,3 +6,39 @@
 # the default rewrite rules.
 
 Include conf.d/rewrites/default_rewrite.rules
+
+# robots.txt
+RewriteRule ^/robots.txt$ /content/dam/${CONTENT_FOLDER_NAME}/robots\.txt [PT,L]
+RewriteRule ^/bitcoin.pdf /content/dam/${CONTENT_FOLDER_NAME}/information/bitcoin.pdf [PT,L]
+# favicon.ico
+RewriteRule ^/favicon.ico$ /content/dam/${CONTENT_FOLDER_NAME}/icons/favicon\.ico [PT]
+
+# Match ONLY the exact root URL (https://www.marco27.net/)
+#RewriteCond %{HTTPS} =on
+#RewriteCond %{HTTP_HOST} ^www\.marco27\.net$ [NC]
+#RewriteCond %{REQUEST_URI} ^/$
+#RewriteCond %{QUERY_STRING} ^$
+#RewriteRule ^$ https://www.marco27.net [R=301,L]
+#RewriteRule ^/$ /content/${CONTENT_FOLDER_NAME}/en/en/home.html [PT,L]
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^/$ /content/${CONTENT_FOLDER_NAME}/en/en/home.html [PT,L]
+#RewriteRule ^/$ /en/home.html [PT,L]
+
+# rewrite for root redirect
+# this should be the last before the big next block
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteRule ^/?$ /content/${CONTENT_FOLDER_NAME}/en/en/home\.html [PT,L]
+
+RewriteCond %{REQUEST_URI} !^/apps
+RewriteCond %{REQUEST_URI} !^/bin
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_URI} !^/etc
+RewriteCond %{REQUEST_URI} !^/home
+RewriteCond %{REQUEST_URI} !^/libs
+RewriteCond %{REQUEST_URI} !^/saml_login
+RewriteCond %{REQUEST_URI} !^/system
+RewriteCond %{REQUEST_URI} !^/tmp
+RewriteCond %{REQUEST_URI} !^/var
+RewriteCond %{REQUEST_URI} !^/conf/(.+\.jpe?g|.+\.png|.+\.svg)$
+#RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg)$
+RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/en/$1.html [PT,L]
