@@ -30,9 +30,11 @@ $include "./default_filters.any"
 
 # robots.txt
 /0202 { /type "allow" /method 'GET' /url "/robots.txt" }
-/0203 { /type "allow" /method 'GET' /url "/content/dam/wasisa/robots.txt" }
-# do no cache the private area
+/0203 { /type "allow" /method 'GET' /url "/content/dam/${CONTENT_FOLDER_NAME}/robots.txt" }
+
+# bitcoin.pdf
 /0204 { /type "allow" /method 'GET' /url "/bitcoin.pdf" }
+
 # /content/dam/${CONTENT_FOLDER_NAME}
 /0205 { /type "allow" /extension '(pkg|xml|zip)' /path "/content/dam/${CONTENT_FOLDER_NAME}*" }
 
