@@ -6,7 +6,7 @@
       "jcr:title": "AEM Vanilla",
       "cq:template": "/conf/aemvanilla/settings/wcm/templates/page-content",
       "sling:configRef": "/conf/aemvanilla",
-      "cq:redirectTarget": "/content/aemvanilla/en/en",
+      "cq:redirectTarget": "/content/aemvanilla/us/en",
       "sling:redirect": true,
       "sling:redirectStatus": 302,
       "cq:conf": "/conf/aemvanilla",
@@ -18,13 +18,13 @@
         "jcr:primaryType": "nt:unstructured"
       }
     },
-    "en": {
+    "us": {
       "jcr:primaryType": "cq:Page",
       "jcr:content": {
         "jcr:primaryType": "cq:PageContent",
         "jcr:title": "en",
         "cq:template": "/conf/aemvanilla/settings/wcm/templates/page-content",
-        "cq:redirectTarget": "/content/aemvanilla/en/en",
+        "cq:redirectTarget": "/content/aemvanilla/us/en",
         "sling:resourceType": "aemvanilla/components/page"
       },
       "en": {

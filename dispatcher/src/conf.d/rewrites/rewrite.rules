@@ -19,15 +19,15 @@ RewriteRule ^/favicon.ico$ /content/dam/${CONTENT_FOLDER_NAME}/icons/favicon\.ic
 #RewriteCond %{REQUEST_URI} ^/$
 #RewriteCond %{QUERY_STRING} ^$
 #RewriteRule ^$ https://www.marco27.net [R=301,L]
-#RewriteRule ^/$ /content/${CONTENT_FOLDER_NAME}/en/en/home.html [PT,L]
+#RewriteRule ^/$ /content/${CONTENT_FOLDER_NAME}/us/en.html [PT,L]
 RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^/$ /content/${CONTENT_FOLDER_NAME}/en/en/home.html [PT,L]
-#RewriteRule ^/$ /en/home.html [PT,L]
+RewriteRule ^/$ /content/${CONTENT_FOLDER_NAME}/us/en.html [PT,L]
+#RewriteRule ^/$ /en.html [PT,L]
 
 # rewrite for root redirect
 # this should be the last before the big next block
 RewriteCond %{REQUEST_URI} ^/?$
-RewriteRule ^/?$ /content/${CONTENT_FOLDER_NAME}/en/en/home\.html [PT,L]
+RewriteRule ^/?$ /content/${CONTENT_FOLDER_NAME}/us/en/home\.html [PT,L]
 
 RewriteCond %{REQUEST_URI} !^/apps
 RewriteCond %{REQUEST_URI} !^/bin
@@ -41,4 +41,4 @@ RewriteCond %{REQUEST_URI} !^/tmp
 RewriteCond %{REQUEST_URI} !^/var
 RewriteCond %{REQUEST_URI} !^/conf/(.+\.jpe?g|.+\.png|.+\.svg)$
 #RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg)$
-RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/en/$1.html [PT,L]
+RewriteRule ^/(.*)$ /content/${CONTENT_FOLDER_NAME}/us/$1.html [PT,L]

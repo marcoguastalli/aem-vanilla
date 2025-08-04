@@ -4,8 +4,8 @@
     cq:allowedTemplates="[/conf/aemvanilla/settings/wcm/templates/(?!page-).*]"
     cq:conf="/conf/aemvanilla"
     jcr:primaryType="sling:OrderedFolder"
-    jcr:title="AEM Vanilla Fragments"
+    jcr:title="AEM VANILLA Fragments"
     sling:configRef="/conf/aemvanilla">
     <language-masters/>
-    <en/>
+    <us/>
 </jcr:root>

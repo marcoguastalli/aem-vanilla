@@ -17,18 +17,18 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemvanilla/components/navigation"
                 collectAllPages="false"
-                navigationRoot="/content/aemvanilla/en/en"
+                navigationRoot="/content/aemvanilla/us/en"
                 skipNavigationRoot="false"
                 structureDepth="1"/>
             <languagenavigation
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemvanilla/components/languagenavigation"
-                navigationRoot="/content/aemvanilla/en"
+                navigationRoot="/content/aemvanilla/us"
                 structureDepth="2"/>
             <search
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="aemvanilla/components/search"
-                searchRoot="/content/aemvanilla/en"/>
+                searchRoot="/content/aemvanilla/us"/>
         </root>
     </jcr:content>
 </jcr:root>

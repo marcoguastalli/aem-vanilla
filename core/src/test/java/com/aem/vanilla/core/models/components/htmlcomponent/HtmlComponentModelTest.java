@@ -30,7 +30,7 @@ class HtmlComponentModelTest {
     @Test
     void testModel() {
         // given
-        final Resource resource = aemContext.resourceResolver().getResource("/content/aemvanilla/en/en/jcr:content/root/container/container/htmlcomponent");
+        final Resource resource = aemContext.resourceResolver().getResource("/content/aemvanilla/us/en/jcr:content/root/container/container/htmlcomponent");
         assertThat(resource, notNullValue());
         assertThat(resource.getResourceType(), is(HtmlComponentModel.RESOURCE_TYPE));
         final HtmlComponentModel model = resource.adaptTo(HtmlComponentModel.class);

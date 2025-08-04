@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         jcr:mixinTypes="[cq:LiveRelationship]"
-        pageTitle="AEM Vanilla"
+        pageTitle="AEM VANILLA"
         jcr:primaryType="cq:PageContent"
         jcr:title="en"
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"

@@ -4,10 +4,10 @@
     <jcr:content
         cq:allowedTemplates="[/conf/aemvanilla/settings/wcm/templates/(?!xf-).*]"
         cq:conf="/conf/aemvanilla"
-        cq:redirectTarget="/content/aemvanilla/en/en"
+        cq:redirectTarget="/content/aemvanilla/us/en"
         cq:template="/conf/aemvanilla/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="AEM Vanilla"
+        jcr:title="AEM VANILLA"
         sling:configRef="/conf/aemvanilla"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"
@@ -17,5 +17,5 @@
         </image>
     </jcr:content>
     <language-masters/>
-    <en/>
+    <us/>
 </jcr:root>

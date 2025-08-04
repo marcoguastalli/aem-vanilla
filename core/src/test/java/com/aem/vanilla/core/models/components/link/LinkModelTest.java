@@ -30,7 +30,7 @@ class LinkModelTest {
     @Test
     void testModel() {
         // given
-        final Resource resource = aemContext.resourceResolver().getResource("/content/aemvanilla/en/en/jcr:content/root/container/container/link");
+        final Resource resource = aemContext.resourceResolver().getResource("/content/aemvanilla/us/en/jcr:content/root/container/container/link");
         assertThat(resource, notNullValue());
         assertThat(resource.getResourceType(), is(LinkModel.RESOURCE_TYPE));
         aemContext.currentResource(resource);
