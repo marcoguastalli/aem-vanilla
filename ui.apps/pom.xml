@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <!-- project -->
     <parent>
         <groupId>com.aem.vanilla</groupId>
         <artifactId>aem-vanilla</artifactId>
@@ -12,12 +13,10 @@
     <packaging>content-package</packaging>
     <name>AEM Vanilla - UI apps</name>
     <description>UI apps package for AEM Vanilla</description>
+    <!-- build -->
     <build>
         <sourceDirectory>src/main/content/jcr_root</sourceDirectory>
         <plugins>
-            <!-- ====================================================================== -->
-            <!-- V A U L T   P A C K A G E   P L U G I N S                              -->
-            <!-- ====================================================================== -->
             <plugin>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
@@ -73,9 +72,7 @@
             </plugin>
         </plugins>
     </build>
-    <!-- ====================================================================== -->
-    <!-- D E P E N D E N C I E S                                                -->
-    <!-- ====================================================================== -->
+    <!-- dependencies -->
     <dependencies>
         <dependency>
             <groupId>com.aem.vanilla</groupId>

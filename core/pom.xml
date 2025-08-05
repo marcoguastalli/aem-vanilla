@@ -32,7 +32,7 @@
                         <configuration>
                             <bnd><![CDATA[
 Import-Package: org.apache.commons.lang3;version=3.14.0;org.apache.commons.io;version=2.15.1;javax.annotation;version=0.0.0,*
-Export-Package: com.aem.vanilla.core.filters.*;com.aem.vanilla.core.listeners.*;com.aem.vanilla.core.models.*;com.aem.vanilla.core.schedulers.*;com.aem.vanilla.core.services.*;com.aem.vanilla.core.servlets.*;com.aem.vanilla.core.utils.*;version=${project.version}
+Export-Package: com.aem.vanilla.core.filters.*;com.aem.vanilla.core.listeners.*;com.aem.vanilla.core.models.*;com.aem.vanilla.core.schedulers.*;com.aem.vanilla.core.servlets.*;version=${project.version}
                                 ]]></bnd>
                         </configuration>
                     </execution>

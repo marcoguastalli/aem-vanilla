@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
- |  Copyright 2023 Adobe Systems Incorporated
- |
- |  Licensed under the Apache License, Version 2.0 (the "License");
- |  you may not use this file except in compliance with the License.
- |  You may obtain a copy of the License at
- |
- |      http://www.apache.org/licenses/LICENSE-2.0
- |
- |  Unless required by applicable law or agreed to in writing, software
- |  distributed under the License is distributed on an "AS IS" BASIS,
- |  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- |  See the License for the specific language governing permissions and
- |  limitations under the License.
---><!--
- | DO NOT MODIFY
--->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <!-- project -->
     <parent>
         <artifactId>aem-vanilla</artifactId>
         <groupId>com.aem.vanilla</groupId>
@@ -30,6 +14,7 @@
     <name>com.adobe.cq.cloud.testing.ui.cypress - UI Tests</name>
     <packaging>pom</packaging>
     <description>Cypress UI tests</description>
+    <!-- properties -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <REPORTS_PATH>${project.basedir}/target/reports</REPORTS_PATH>
@@ -40,6 +25,7 @@
         <AEM_PUBLISH_USERNAME>admin</AEM_PUBLISH_USERNAME>
         <AEM_PUBLISH_PASSWORD>admin</AEM_PUBLISH_PASSWORD>
     </properties>
+    <!-- build -->
     <build>
         <pluginManagement>
             <plugins>

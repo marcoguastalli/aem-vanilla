@@ -45,7 +45,8 @@
         <org.junit.version>5.8.2</org.junit.version>
         <org.mockito.version>4.11.0</org.mockito.version>
         <io.wcm.testing.version>5.2.0</io.wcm.testing.version>
-        <org.apache.sling.testing.caconfig.mock.plugin.version>1.4.0</org.apache.sling.testing.caconfig.mock.plugin.version>
+        <org.apache.sling.testing.caconfig.mock.plugin.version>1.4.0
+        </org.apache.sling.testing.caconfig.mock.plugin.version>
         <uk.org.lidalia.slf4j-test.version>1.2.0</uk.org.lidalia.slf4j-test.version>
     </properties>
     <!-- modules -->
@@ -124,7 +125,8 @@
                             </goals>
                             <configuration>
                                 <bnd>Bundle-Category: ${componentGroupName}
-                                    # export all versioned packages except for conditional ones (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
+                                    # export all versioned packages except for conditional ones
+                                    (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
                                     -exportcontents: ${removeall;${packages;VERSIONED};${packages;CONDITIONAL}}
                                     # reproducible builds (https://github.com/bndtools/bnd/issues/3521)
                                     -noextraheaders: true
@@ -490,7 +492,9 @@
                                         <goal>install</goal>
                                     </goals>
                                     <configuration>
-                                        <targetURL>http://${aem.publish.host}:${aem.publish.port}/crx/packmgr/service.jsp</targetURL>
+                                        <targetURL>
+                                            http://${aem.publish.host}:${aem.publish.port}/crx/packmgr/service.jsp
+                                        </targetURL>
                                     </configuration>
                                 </execution>
                             </executions>
