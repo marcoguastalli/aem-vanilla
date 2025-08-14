@@ -18,7 +18,8 @@ import javax.annotation.PostConstruct;
 import static com.aem.vanilla.core.CoreConstants.DOT;
 import static com.aem.vanilla.core.CoreConstants.HTML_EXTENSION;
 
-@Model(adaptables = SlingHttpServletRequest.class,
+@Model(
+        adaptables = SlingHttpServletRequest.class,
         adapters = {LinkModel.class, ComponentExporter.class},
         resourceType = LinkModel.RESOURCE_TYPE,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL

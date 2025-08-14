@@ -7,7 +7,11 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
-@Model(adaptables = Resource.class, resourceType = HtmlComponentModel.RESOURCE_TYPE, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Model(
+        adaptables = Resource.class,
+        resourceType = HtmlComponentModel.RESOURCE_TYPE,
+        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
+)
 public class HtmlComponentModel {
     public static final String RESOURCE_TYPE = "aemvanilla/components/htmlcomponent";
 
