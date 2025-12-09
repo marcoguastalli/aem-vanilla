@@ -27,7 +27,7 @@
         https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest
         https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current?lang=en
         -->
-        <aem.sdk.api>2025.11.23385.20251113T172403Z-251100</aem.sdk.api>
+        <aem.sdk.api>2025.11.23482.20251120T200914Z-251100</aem.sdk.api>
         <!-- Adobe Core Components https://github.com/adobe/aem-core-wcm-components/releases -->
         <core.wcm.components.version>2.30.2</core.wcm.components.version>
         <!-- Frontend Maven Plugin https://github.com/eirslett/frontend-maven-plugin/tags -->
